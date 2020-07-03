@@ -21,6 +21,10 @@ def cdp_map(task):
                                   ])
 
 
+def main():
+    nr.data.dry_run = False
+    result = nr.run(task=cdp_map)
+    print_result(result)
 
-result = nr.run(task=cdp_map)
-print_result(result)
+if __name__ == '__main__':
+    main()

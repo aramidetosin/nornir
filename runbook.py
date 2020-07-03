@@ -17,12 +17,12 @@ def cdp_map(task):
             cdp_config = task.run(netmiko_send_config, name='Automating CDP Network Description',
                                   config_commands=[
                                       'interface '+str(local_intf),
-                                      'description ' + str(remote_id) + ' <> ' + str(remote_port)
+                                      'description ' + str(task.host)+'.cisco'+ ' ' +str(local_intf) +' <> '+ str(remote_id) + ' ' + str(remote_port)
                                   ])
 
 
 def main():
-    nr.data.dry_run = False
+    # nr.data.dry_run = True
     result = nr.run(task=cdp_map)
     print_result(result)
 

@@ -40,7 +40,7 @@ def pingreport(cidr):
                 elif proc.returncode == 1:
                     inactive_list.append(IP)
                 else:
-                    print(f"{ip} ERROR")
+                    print(f"{IP} ERROR")
                 break
 
     table = Table(title="PING REPORT \n" + localtime)

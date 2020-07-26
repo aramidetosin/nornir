@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from nornir import InitNornir
 from nornir.plugins.tasks.networking import netmiko_send_command, netmiko_send_config
 from nornir.plugins.functions.text import print_title, print_result

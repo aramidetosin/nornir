@@ -4,38 +4,62 @@ CE1:
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 CE2:
         hostname: 10.1.1.2
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
+
 PE1:
         hostname: 10.1.1.3
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 PE2:
         hostname: 10.1.1.4
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 P1:
         hostname: 10.1.1.5
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 P2-RR:
         hostname: 10.1.1.6
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 PE3:
         hostname: 10.1.1.7
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group
+
 PE4:
         hostname: 10.1.1.8
         username: cisco
         password: cisco
         platform: ios
+        groups:
+                - cisco_group

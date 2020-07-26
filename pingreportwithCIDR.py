@@ -53,7 +53,6 @@ def pingreport(cidr):
     console.print(table)
     print(f"We have {len(active_list)} of active devices")
     print(f"We have {len(inactive_list)} available IPs")
-    print(datetime.now() - startTime)
 
 
 def main():
